@@ -1,0 +1,10 @@
+scan_right
+.
+scan_right . . -> scan_right
+scan_right 1 1 -> scan_right
+scan_right + + -> add_one
+scan_right = = <- erase_last
+erase_last 1 . -> erase_last
+erase_last = . <- halt
+add_one 1 1 <- add_one
+add_one + 1 -> scan_right
